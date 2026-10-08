@@ -6,10 +6,14 @@
 <title>Shreevarnika Nagammal — Software Engineer · Computerized System Validation</title>
 <meta name="description" content="Portfolio of Shreevarnika Nagammal — Software Engineer specializing in Computerized System Validation, software testing and life-sciences compliance. Capgemini · Smith+Nephew · Pune.">
 <!-- ==========================================================
-     BEFORE DEPLOYING:
-     1. Replace EMAIL + LINKEDIN constants at the top of <script>.
-     2. Replace the two picsum placeholder images with real
-        photos of Shreevarnika (keep the same aspect ratio).
+     BEFORE SHARING:
+     1. Edit the EMAIL + LINKEDIN lines near the bottom of the
+        <script> (search for "EDIT THESE").
+     2. Her photo loads automatically from the GitHub repo:
+        https://raw.githubusercontent.com/PAWARSAHIL07/REUME.VARNIKA/main/photo_6212834279054578345_y.jpg
+        - The repo must stay PUBLIC for visitors to see the photo.
+        - If the photo is renamed, update the URL in the <img> tags.
+        - If the photo can't load, an "SN" monogram shows instead.
 =========================================================== -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F6F1E7'/%3E%3Cpath d='M6 18h6l3-8 4 14 3-6h4' stroke='%23C1502E' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,10 +93,10 @@ h1 em{font-style:italic;font-weight:400}
 .btn.primary:hover{background:var(--ink);border-color:var(--ink)}
 .btn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2.2}
 
-/* portrait */
+/* portrait — HER PHOTO, from the GitHub repo */
 .portrait{position:relative;max-width:400px;justify-self:end;width:100%}
 .portrait .frame{border:1px solid var(--ink);border-radius:14px;overflow:hidden;box-shadow:14px 14px 0 var(--paper2);position:relative}
-.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.88) contrast(1.04)}
+.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;filter:saturate(.88) contrast(1.04)}
 .portrait .frame::after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(193,80,46,.12),transparent 45%,rgba(37,33,26,.14));mix-blend-mode:multiply;pointer-events:none}
 .portrait .cap{margin-top:26px;font-family:var(--hand);font-size:1.3rem;color:var(--mut);transform:rotate(-2deg);line-height:1.35}
 .portrait .cap b{color:var(--clay);font-weight:600}
@@ -101,7 +105,7 @@ h1 em{font-style:italic;font-weight:400}
 .ecg{margin-top:70px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:0}
 .ecg svg{display:block;width:100%;height:56px}
 .ecg .base{stroke:rgba(37,33,26,.18);fill:none;stroke-width:1.5}
-.ecg .live{stroke:var(--clay);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:200 1400;filter:none;animation:trace 7s linear infinite;transition:stroke .6s}
+.ecg .live{stroke:var(--clay);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:200 1400;animation:trace 7s linear infinite;transition:stroke .6s}
 @keyframes trace{from{stroke-dashoffset:1600}to{stroke-dashoffset:0}}
 .ecg .lbl{position:absolute;right:26px;top:-11px;background:var(--paper);padding:0 12px;font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;color:var(--mut)}
 
@@ -183,7 +187,7 @@ h1 em{font-style:italic;font-weight:400}
 .tl-item li{padding-left:22px;position:relative;color:rgba(241,234,219,.72);font-size:.95rem;margin:6px 0}
 .tl-item li::before{content:'—';position:absolute;left:0;color:#D9A06B}
 
-/* ---------- writing ---------- */
+/* ---------- lifecycle dial ---------- */
 #lifecycle .range-wrap{margin:56px 0 12px}
 input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:8px;border-radius:99px;outline:none;cursor:ew-resize;
   background:linear-gradient(90deg,var(--slate) 0 20%,var(--clay) 20% 40%,var(--sage) 40% 60%,var(--ochre) 60% 80%,var(--rose) 80% 100%)}
@@ -210,7 +214,7 @@ input[type=range]::-moz-range-track{height:8px;border-radius:99px;background:lin
 .std .sc{font-family:var(--mono);font-size:9px;color:var(--mut);letter-spacing:.12em;margin-top:8px;display:block;text-align:right}
 @media(max-width:700px){.std{grid-template-columns:44px 1fr;row-gap:10px}.std>div:last-child{grid-column:2}}
 
-/* ---------- writing / essays ---------- */
+/* ---------- essays ---------- */
 #essays{background:var(--paper2)}
 .essay{border-top:1px solid var(--line2)}
 .essay:last-child{border-bottom:1px solid var(--line2)}
@@ -241,7 +245,11 @@ input[type=range]::-moz-range-track{height:8px;border-radius:99px;background:lin
 @media(max-width:880px){.e-in{grid-template-columns:1fr}.rp{position:static}.e-head{grid-template-columns:48px 1fr 24px}.e-head .meta{display:none}}
 
 /* ---------- contact ---------- */
-.c-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;margin-top:50px;align-items:start}
+.me-chip{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+.me-chip img{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:50% 30%;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--paper3)}
+.me-chip .mc-txt{font-family:var(--hand);font-size:1.35rem;color:var(--clay);transform:rotate(-1.5deg);line-height:1.25}
+.me-chip .mc-txt small{display:block;font-family:var(--mono);font-size:9px;letter-spacing:.16em;color:var(--mut);margin-top:4px;transform:none}
+.c-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;margin-top:30px;align-items:start}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .field{margin-bottom:24px}
 .field label{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--mut);margin-bottom:9px;text-transform:uppercase}
@@ -321,8 +329,12 @@ footer{border-top:1px solid var(--line);padding:40px 0 50px;background:var(--pap
       </div>
       <figure class="portrait">
         <div class="frame">
-          <!-- Replace with a real portrait of Shreevarnika -->
-          <img src="https://picsum.photos/seed/shreevarnika-pune/720/900.jpg" alt="Portrait of Shreevarnika Nagammal">
+          <!-- HER PHOTO — loads straight from the GitHub repo.
+               If it ever can't load, the "SN" monogram shows instead. -->
+          <img src="https://raw.githubusercontent.com/PAWARSAHIL07/REUME.VARNIKA/main/photo_6212834279054578345_y.jpg"
+               alt="Portrait of Shreevarnika Nagammal"
+               loading="eager"
+               onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%20720%20900%27%3E%3Crect%20width=%27720%27%20height=%27900%27%20fill=%27%232A2620%27/%3E%3Ctext%20x=%27360%27%20y=%27475%27%20font-family=%27Georgia,serif%27%20font-size=%27170%27%20font-style=%27italic%27%20fill=%27%23F1EADB%27%20text-anchor=%27middle%27%3ESN%3C/text%3E%3C/svg%3E'">
         </div>
         <figcaption class="cap">Biomedical engineer by degree, <b>validation engineer</b> by choice — Chennai-born, Pune-based.</figcaption>
       </figure>
@@ -560,6 +572,14 @@ footer{border-top:1px solid var(--line);padding:40px 0 50px;background:var(--pap
         <p class="cnote">NO SERVERS, NO TRACKING — YOUR MESSAGE IS DRAFTED LOCALLY AND SENT FROM YOUR OWN MAIL CLIENT.</p>
       </form>
       <div>
+        <div class="me-chip">
+          <img src="https://raw.githubusercontent.com/PAWARSAHIL07/REUME.VARNIKA/main/photo_6212834279054578345_y.jpg"
+               alt="Shreevarnika Nagammal"
+               loading="lazy"
+               onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%20200%20200%27%3E%3Crect%20width=%27200%27%20height=%27200%27%20fill=%27%232A2620%27/%3E%3Ctext%20x=%27100%27%20y=%27125%27%20font-family=%27Georgia,serif%27%20font-size=%2760%27%20font-style=%27italic%27%20fill=%27%23F1EADB%27%20text-anchor=%27middle%27%3ESN%3C/text%3E%3C/svg%3E'">
+          <span class="mc-txt">That's me — I'd love to hear from you.
+            <small>PUT A FACE TO THE NAME</small></span>
+        </div>
         <div class="cacts">
           <a href="#" id="lnk" target="_blank" rel="noopener">LinkedIn profile
             <span class="sm">500+ CONNECTIONS · VERIFIED PROFILE</span><span class="arr">↗</span></a>
@@ -590,10 +610,10 @@ footer{border-top:1px solid var(--line);padding:40px 0 50px;background:var(--pap
 
 <script>
 /* ================================================================
-   Shreevarnika — edit these two lines before deploying.
+   ✏️ EDIT THESE TWO LINES BEFORE SHARING (that's the only edit needed)
 ================================================================ */
-const EMAIL    = 'shreevarnika.nagammal@example.com';
-const LINKEDIN = 'https://www.linkedin.com/in/shreevarnika-nagammal';
+const EMAIL    = 'shreevarnika.nagammal@example.com';   // ← her real email
+const LINKEDIN = 'https://www.linkedin.com/in/shreevarnika-nagammal'; // ← her real LinkedIn
 
 const CLAY='#C1502E', SAGE='#5E7A54', OCHRE='#B08429', SLATE='#47698C', ROSE='#A4566B';
 const $  = s => document.querySelector(s);
@@ -631,7 +651,7 @@ function flip(els, mutate){
   });
 }
 
-/* ---------- ECG divider (delicate nod to her degree) ---------- */
+/* ---------- ECG divider ---------- */
 (function(){
   const beat = x => ` L${x+92} 40 L${x+106} 33 L${x+120} 40 L${x+168} 40 L${x+176} 47 L${x+184} 8 L${x+192} 60 L${x+200} 40 L${x+226} 40 L${x+238} 31 L${x+250} 40 L${x+300} 40`;
   let d = 'M0 40';
@@ -646,7 +666,7 @@ const revIO = new IntersectionObserver(es => es.forEach(e => {
 }), { threshold: 0.12 });
  $$('.rev').forEach(el => revIO.observe(el));
 
-/* ---------- scroll: progress bar + natural accent shifts + active nav ---------- */
+/* ---------- scroll: progress bar + accent shifts + active nav ---------- */
 const ACCENTS = { hero:CLAY, about:SAGE, skills:OCHRE, experience:'#D9A06B', lifecycle:SLATE, essays:ROSE, contact:CLAY };
 const secIO = new IntersectionObserver(es => es.forEach(e => {
   if (!e.isIntersecting) return;
@@ -741,12 +761,11 @@ const chipsEl = $('#chips');
     flip(rows, () => {
       rows.forEach(r => {
         const show = k === 'all' || r.dataset.cat === k;
-        if (show && r.style.display === 'none') r.style.animation = 'swap .4s ease both'; 
+        if (show && r.style.display === 'none') r.style.animation = 'swap .4s ease both';
         r.style.display = show ? '' : 'none';
       });
       $('#skcount').textContent = `SHOWING ${rows.filter(r => r.style.display !== 'none').length} OF ${SKILLS.length} SKILLS — ${k === 'all' ? 'EVERYTHING I BRING' : label.toUpperCase()}`;
       const firstVisible = rows.find(r => r.style.display !== 'none');
-      if (firstVisible && (!activeSkill || firstVisible.dataset.id !== activeSkill)) selectSkill(firstVisible.dataset.id);
       if (firstVisible) selectSkill(firstVisible.dataset.id);
     });
   });
@@ -824,19 +843,16 @@ function renderDial(){
   $$('#phaseBtns button').forEach((b, i) => b.classList.toggle('on', i === dialIdx));
   const cards = [...stdList.children];
   flip(cards, () => {
-    cards.forEach((c, i) => {
-      c._s = STDS[i].rel[dialIdx];
-      c.dataset.s = c._s;
-    });
+    cards.forEach((c, i) => { c._s = STDS[i].rel[dialIdx]; c.dataset.s = c._s; });
     const order = [...cards].sort((a, b) => b.dataset.s - a.dataset.s);
     order.forEach((c, i) => {
-      const s = +c.dataset.s;
+      const s = +c.dataset.s, data = STDS[cards.indexOf(c)];
       c.style.order = i;
       c.querySelector('.rank').textContent = '0' + (i + 1);
       c.classList.toggle('top', i === 0 && s >= 4);
       c.style.opacity = (0.45 + 0.55 * (s / 5)).toFixed(2);
-      c.querySelector('h4').textContent = STDS[cards.indexOf(c)].n;
-      c.querySelector('.g').textContent = STDS[cards.indexOf(c)].g;
+      c.querySelector('h4').textContent = data.n;
+      c.querySelector('.g').textContent = data.g;
       c.querySelector('.bar i').style.width = (s / 5 * 100) + '%';
       c.querySelector('.sc').textContent = 'RELEVANCE ' + s + ' / 5 · APPLIED AT CAPGEMINI';
     });
@@ -944,7 +960,7 @@ renderDial();
     '  documentation in manufacturing',
     '',
     '============================================================',
-    'Generated live from shreevarnika.dev — thank you for reading.'
+    'Generated live from her portfolio — thank you for reading.'
   ].join('\n');
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([cv], { type:'text/plain' }));
